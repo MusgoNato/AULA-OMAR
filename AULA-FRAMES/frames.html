@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <!--O title muda o nome da aba da página-->
+        <title>Exemplo de uso de frames</title>
+    </head>
+    <!--O rows tem como padrao 2 parametros que serao as linhas ou colunas que a moldura ira ocupar na tela, o * simboliza o restante-->
+    <frameset rows="80,*" frameborder="0">
+        <p>Esse é o topo</p>
+        <!--Esse arquivo abaixo, é espicificado a moldura, ou seja, cada moldura sera um arquivo html diferente, estes chamados paginas-->
+        <frame src="teste.html" name="cabeçalho"></frame>
+        <!--Definição das colunas da moldura-->
+            <frameset cols="160,*">
+                <frame src="pagina_menu.html" name="menu"></frame>
+                <frame src="pagina_detalhes.html" name="detalhes"></frame>
+            </frameset>
+    </frameset>
+</html>
