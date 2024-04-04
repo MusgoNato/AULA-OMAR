@@ -1,0 +1,46 @@
+<!--Botoes de radio, é a seleção de alternativas dentro dos formularios em formato circular
+Caixas de seleção, iguais a botoes de radio mas em formato quadrado
+PRINCIPAIS ATRIBUTOS DA TAG FORM
+name -> permiti definir um nome pro formulario criado pra ele ser usado por meio de javascript ou outra linguagem
+action -> Faz uma acao para conexao do site ao cliente, mandando suas informações para o servidor por meio de algum tipo de botao
+method -> Metodo de envio de formulario
+fieldset vai criar um tipo de retangulo envolta das alternativas que eu for colocar
+-->
+<html>
+    <head>
+        <h1 align="center" >Formulário de Cadastro</h1>
+    </head>
+    <body>
+        <form name="FormCadastro">
+            <fieldset>
+                <!--O legend vai ser um tipo de cabeçalho do container-->
+                <legend>Cadastro da pessoa</legend>
+                <!--Aqui tem que ser um parahrafo para se impresso na tela-->
+                <p>Name: <input type="text" name="nome"/></p>
+                <p>Sobrenome: <input type="text" name="sobrenome"/></p>
+                <!--Value aparece o texto do botao-->
+                <p>Sexo: <input type="radio" name="Sexo" value="masculino"/>Masculino <input type="radio" name="Sexo" value="feminino"/>Feminino</p>
+                <p>Estado:
+                    <!--Select para selecionar as opções, no caso option mais pra frente, vai ser tipo uma lista de seleçao-->
+                    <select name="estado">
+                        <option value="AC">Acre</option>
+                        <option value="AG">Agro é top</option>
+                    </select>
+                </p>
+            </fieldset>
+        </form>
+        <form name="FormENdereço">
+            <fieldset>
+                <legend>Endereço</legend>
+                <p>Rua: <input type="text" name="Rua" size="25"></p>
+                <p>Bairro: <input type="text" name="Bairro" size="10"></p>
+            </fieldset>
+            </form>
+        <form name="FormBotoesdeenvio">
+            <fieldset> 
+                <legend>Botões de envio</legend>
+                    <p><input type="button" name="Enviar" value="Enviar"> <input type="button" name="Limpar" value="Limpar"></p>
+            </fieldset>
+        </form>
+    </body>
+</html>
