@@ -10,8 +10,8 @@
         <br>
         <!--Formulario do 1° fieldset-->
         <form name="DadosPessoais">
-            <fieldset style="border: double;"><br>
-                <b><p>Dados pessoais:</p></b>
+            <fieldset style="border: double;">
+                <b><label for="Dados Pessoais">Dados pessoais:</label></b>
                 <center>
                     <p>Nome do Aluno: <input type="text" name="Nome" size="25"></p>
                     <p>Nascimento (ddd/mm/aa): <input type="text" name="dia" size="1">/<input type="text" name="mes" size="1">/<input type="text" name="ano" size="1"></p>
@@ -39,15 +39,26 @@
                   
 
                         <!--2° formulario-->
-                        <label for="Turno">Turno:</label>
-                        <input type="radio" name="manha">Manhã
-                        <input type="radio" name="tarde">Tarde
-                    </div>
+                        <form>
+                            <div>
+                                <label for="Turno">Turno:</label>
+                                <div>
+                                    <div>
+                                        <input type="radio" name="manha">Manhã
+                                        <div>                               
+                                            <input type="radio" name="tarde">Tarde
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        
 
                 <!--3° formulario-->
+                <!--
                 <form name="AtiviExtra">
                     <div>
-                        Atividades Extracurriculares:<br>   
+                        <label for="Atividades Extracurriculares">Atividades Extracurriculares:</label><br>   
                         <input type="checkbox" name="Informática">Informática<br>
                         <input type="checkbox" name="Música">Música<br>
                         <input type="checkbox" name="Balet">Balet<br>
@@ -56,6 +67,7 @@
                         <input type="checkbox" name="Futebol">Futebol
                     </div>
                 </form>
+                -->
             </fieldset>
             <form>
                 <p align="center">
