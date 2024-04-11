@@ -9,7 +9,7 @@
     <body>
         <br>
         <!--Formulario do 1° fieldset-->
-        <form>
+        <form name="DadosPessoais">
             <fieldset style="border: double;"><br>
                 <b><p>Dados pessoais:</p></b>
                 <center>
@@ -25,29 +25,27 @@
 
         <!--Formulario do 2° fieldset-->
         <!--1° Formulario-->
-        <form>
+        <form name="Série">
             <fieldset style="border: double;">
                 <b><p align="left">Informações de Matrícula:</p></b>
-                    <div>Série:
+                    <div>
+                        <label for="Serie">Série: </label>
                         <select name="Série">
                             <option value="pré-escolar">Pré-escolar</option>
                             <option value="fundamental">Fundamental</option>
                             <option value="Ensino Médio">Ensino Médio</option>
                             <option value="Ensino Superior">Ensino Superior</option>
                         </select>
-                    </div>
+                  
 
-                <!--2° formulario-->
-                <form>
-                    <div>
-                        Turno:<br>
-                        <input type="radio" name="manha">Manhã<br>
+                        <!--2° formulario-->
+                        <label for="Turno">Turno:</label>
+                        <input type="radio" name="manha">Manhã
                         <input type="radio" name="tarde">Tarde
                     </div>
-                </form>
 
                 <!--3° formulario-->
-                <form>
+                <form name="AtiviExtra">
                     <div>
                         Atividades Extracurriculares:<br>   
                         <input type="checkbox" name="Informática">Informática<br>
@@ -59,10 +57,12 @@
                     </div>
                 </form>
             </fieldset>
-            <p align="center">
-                <input type="submit" name="EnviaFomr" value="Enviar formulário">
-                <input type="reset" name="LimpaForm" value="Limpa Campos">
-            </p>
+            <form>
+                <p align="center">
+                    <input type="submit" name="EnviaFomr" value="Enviar formulário">
+                    <input type="reset" name="LimpaForm" value="Limpa Campos">
+                </p>
+            </form>
         </form>
     </body>
 </html>
