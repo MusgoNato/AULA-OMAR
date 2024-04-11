@@ -8,45 +8,61 @@
 
     <body>
         <br>
+        <!--Formulario do 1° fieldset-->
         <form>
             <fieldset style="border: double;"><br>
                 <b><p>Dados pessoais:</p></b>
-                <p>Nome do Aluno: <input type="text" name="Nome" size="25"></p>
-                <p>Nascimento (ddd/mm/aa): <input type="text" name="dia" size="1">/<input type="text" name="mes" size="1">/<input type="text" name="ano" size="1"></p>
-                <p>Nome do Mãe: <input type="text" name="Mae" size="26"></p>
-                <p>Nome do Pai: <input type="text" name="Pai" size="27"></p>
-                <p>Telefone: DDD (<input type="text" name="ddd" size="1">) Tel: <input type="text" name="Tel" size="10"> Ramal: <input type="text" name="ramal" size="1"></p>
-                <p>Email: <input type="text" name="email" size="34"></p>
+                <center>
+                    <p>Nome do Aluno: <input type="text" name="Nome" size="25"></p>
+                    <p>Nascimento (ddd/mm/aa): <input type="text" name="dia" size="1">/<input type="text" name="mes" size="1">/<input type="text" name="ano" size="1"></p>
+                    <p>Nome do Mãe: <input type="text" name="Mae" size="26"></p>
+                    <p>Nome do Pai: <input type="text" name="Pai" size="27"></p>
+                    <p>Telefone: DDD (<input type="text" name="ddd" size="1">) Tel: <input type="text" name="Tel" size="10"> Ramal: <input type="text" name="ramal" size="1"></p>
+                    <p>Email: <input type="text" name="email" size="34"></p>
+                </center>
             </fieldset>
         </form>
+
+        <!--Formulario do 2° fieldset-->
+        <!--1° Formulario-->
         <form>
             <fieldset style="border: double;">
                 <b><p align="left">Informações de Matrícula:</p></b>
-                <p>Série:
-                    <select name="Série">
-                        <option value="pré-escolar">Pré-escolar</option>
-                        <option value="fundamental">Fundamental</option>
-                        <option value="Ensino Médio">Ensino Médio</option>
-                        <option value="Ensino Superior">Ensino Superior</option>
-                    </select>
-                    
-                </p>
-                <p>Turno:<br>
-                    <input type="radio" name="Manha">Manhã<br>
-                    <input type="radio" name="Tarde">Tarde
-                </p>
-                <p>Atividades Extracurriculares:<br>
-                    <input type="checkbox" name="Informática">Informática<br>
-                    <input type="checkbox" name="Música">Música<br>
-                    <input type="checkbox" name="Balet">Balet<br>
-                    <input type="checkbox" name="Pintura">Pintura<br>
-                    <input type="checkbox" name="Judô">Judô<br>
-                    <input type="checkbox" name="Futebol">Futebol
-                </p>
+                    <div>Série:
+                        <select name="Série">
+                            <option value="pré-escolar">Pré-escolar</option>
+                            <option value="fundamental">Fundamental</option>
+                            <option value="Ensino Médio">Ensino Médio</option>
+                            <option value="Ensino Superior">Ensino Superior</option>
+                        </select>
+                    </div>
+
+                <!--2° formulario-->
+                <form>
+                    <div>
+                        Turno:<br>
+                        <input type="radio" name="manha">Manhã<br>
+                        <input type="radio" name="tarde">Tarde
+                    </div>
+                </form>
+
+                <!--3° formulario-->
+                <form>
+                    <div>
+                        Atividades Extracurriculares:<br>   
+                        <input type="checkbox" name="Informática">Informática<br>
+                        <input type="checkbox" name="Música">Música<br>
+                        <input type="checkbox" name="Balet">Balet<br>
+                        <input type="checkbox" name="Pintura">Pintura<br>
+                        <input type="checkbox" name="Judô">Judô<br>
+                        <input type="checkbox" name="Futebol">Futebol
+                    </div>
+                </form>
             </fieldset>
-            <p>
-                <input type="submit" name="EnviaFomr">
-                <input type="reset" name="LimpaForm"></p>
+            <p align="center">
+                <input type="submit" name="EnviaFomr" value="Enviar formulário">
+                <input type="reset" name="LimpaForm" value="Limpa Campos">
+            </p>
         </form>
     </body>
 </html>
