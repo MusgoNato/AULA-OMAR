@@ -28,7 +28,7 @@
         <form name="Série">
             <fieldset style="border: double;">
                 <b><p align="left">Informações de Matrícula:</p></b>
-                    <div>
+                    <span>
                         <label for="Serie">Série: </label>
                         <select name="Série">
                             <option value="pré-escolar">Pré-escolar</option>
@@ -36,23 +36,20 @@
                             <option value="Ensino Médio">Ensino Médio</option>
                             <option value="Ensino Superior">Ensino Superior</option>
                         </select>
-                  
-
+                        <label for="Turno">&nbsp;</label>
+                    </span>
+                    
                         <!--2° formulario-->
+                    <form>
                         <form>
-                            <div>
-                                <label for="Turno">Turno:</label>
-                                <div>
-                                    <div>
-                                        <input type="radio" name="manha">Manhã
-                                        <div>                               
-                                            <input type="radio" name="tarde">Tarde
-                                        </div>
-                                    </div>
-                                </div>
+                        <span>
+                            <div align="center">
+                                <input type="radio" name="manha">Manhã<br>                              
+                                <input type="radio" name="tarde">Tarde
                             </div>
-                        </form>
-                        
+                        </span>
+                    </form>
+                            
 
                 <!--3° formulario-->
                 <!--
@@ -68,6 +65,7 @@
                     </div>
                 </form>
                 -->
+
             </fieldset>
             <form>
                 <p align="center">
