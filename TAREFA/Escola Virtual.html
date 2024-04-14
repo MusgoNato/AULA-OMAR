@@ -25,48 +25,43 @@
             </form>
         </div>
         <div>
-        <fieldset>
-            <div style="float: left;">
-                <!--Formulario do 2° fieldset-->
-                <!--1° Formulario-->
-                <form name="Série">
+            <!--Formulários do 2° fieldset-->
+            <fieldset>
+                <!--Deixa os container no mesmo nivel de linha e deixa que eles possam ser alinhados um ao lado do outro-->
+                <div style="display: flex; justify-content: space-between;">
+                    <!--1° Formulario-->
+                    <form name="Série">
                         <b>Informações de Matrícula:</b>
-                        <div style="width: 20%;">
-                            <br><label for="Serie">Série: </label>
+                        <br><label for="Serie">Série: </label>
                             <select name="Série">
                                 <option value="pré-escolar">Pré-escolar</option>
                                 <option value="fundamental">Fundamental</option>
                                 <option value="Ensino Médio">Ensino Médio</option>
                                 <option value="Ensino Superior">Ensino Superior</option>
                             </select>
-                        </div>
-                </form>
-            </div>
-            <div align="center" >
-                <form name="Turno">
-                    <div style="width: 20%;">
+                    </form>
+
+                    <!--2° formulario-->
+                    <form name="Turno">
                         <br><label for="Turno">Turno: </label><br>
-                        <input type="radio" name="Manha">Manhã<br>
-                        <input type="radio" name="Tarde">Tarde<br>
-                    </div>
-                </form>
-            </div>
-            
-            <div style="float: inline-end;">
-                <!--3° formulario-->
-                <form name="AtiviExtra">
-                    <div>
-                        <label for="Atividades Extracurriculares">Atividades Extracurriculares:</label><br>   
-                        <input type="checkbox" name="Informática">Informática<br>
-                        <input type="checkbox" name="Música">Música<br>
-                        <input type="checkbox" name="Balet">Balet<br>
-                        <input type="checkbox" name="Pintura">Pintura<br>
-                        <input type="checkbox" name="Judô">Judô<br>
-                        <input type="checkbox" name="Futebol">Futebol
-                    </div>
-                </form>
-            </div>
-        </fieldset>
+                            <input type="radio" name="Manha">Manhã<br>
+                            <input type="radio" name="Tarde">Tarde<br>
+                    </form>
+                
+                    <!--3° formulario-->
+                    <form name="AtiviExtra">
+                            <br><label for="Atividades Extracurriculares">Atividades Extracurriculares:</label><br>   
+                            <input type="checkbox" name="Informática">Informática<br>
+                            <input type="checkbox" name="Música">Música<br>
+                            <input type="checkbox" name="Balet">Balet<br>
+                            <input type="checkbox" name="Pintura">Pintura<br>
+                            <input type="checkbox" name="Judô">Judô<br>
+                            <input type="checkbox" name="Futebol">Futebol
+                    </form>
+                </div>
+            </fieldset>
+
+            <!--Botões de envio-->
             <form>
                 <p align="center">
                     <input type="submit" name="EnviaForm" value="Enviar formulário">
