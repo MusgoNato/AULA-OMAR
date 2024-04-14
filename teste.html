@@ -1,4 +1,4 @@
-<html>
+<!--<html> Testando as divs do lado da outra
     <head>
         <h1 align="center">Olá mundo!</h1>
     </head>
@@ -26,5 +26,69 @@
             
                 
         </div>
+    </body>
+</html>-->
+
+<!--Código do Gabriel arrumado-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1 align="center">Escola Virtual</h1>
+        <h1 align="center"> Formulario de Pré-Matricula</h1>
+    </head>
+
+    <body>
+        <form>
+            <fieldset>    
+                <p>Dados Pessoais:</p>
+                <p align="center">Nome do Aluno: <input type="text" name="nome" /><br></p>
+                <p align="center">Nascimento (dd/mm/aaaa):<input type="text" name="Nascimento (dd/mm/aaaa)"                          size="1">/<input type="text" nome="Nascimento (dd/mm/aaaa)"size="1">/<input type="text"           nome="Nascimento (dd/mm/aaaa)" size="1"><br></p>
+                <p align="center">Nome da Mae: <input type="text" name="mae" size="25" /><br></p>
+                <p align="center">Nome do Pai: <input type="text" name=""pai" size="26"/><br></p>
+                <p align="center">Telefone: DDD:<input type="text" name="nome" size="1">Tel:<input type="text" name="tel" size="10"/> Ramal:<input type="text" name="ramal" size="1"/><br></p>
+                <p align="center">E-Mail: <input type="text" name="E-mail" size="31" /><br></p>  
+            </fieldset> 
+        </form>  
+
+            <fieldset>
+                <p>Informação de Matricula:</p>
+                <div style="display: flex; justify-content: space-between;">    
+                    <div>
+                        <label>Série:</label>
+                        <select>
+                            <option value="pre-escola1">pre-escola1</option>
+                            <option value="pre-escola" selected>pre-escola </option> 
+                            <option value="pre-escola2">pre-escola2</option>
+                        </select>
+                    </div>
+                
+                 <div>
+                    <label>Turno:</label><br>
+                    <input type="radio" name="Manhã">Manhã<br>
+                    <input type="radio" name="Vespertino">Vespertino
+                </div>
+
+                <div>
+                    <label>Atividades Extracurriculares:</label><br>
+                    <input type="radio" id="Informatica" name="atividades" value="Informatica">
+                    <label for="Informatica">Informatica</label><br>
+                    <input type="radio" id="Musica" name="atividades" value="Musica">
+                    <label for="Musica">Musica</label><br>
+                    <input type="radio" id="Balet" name="atividades" value="Balet">
+                    <label for="Balet">Balet</label><br>
+                    <input type="radio" id="Pintura" name="atividades" value="Pintura">
+                    <label for="Pintura">Pintura</label><br>
+                    <input type="radio" id="Judo" name="atividades" value="Judo">
+                    <label for="Judo">Judo</label><br>
+                    <input type="radio" id="Futebol" name="atividades" value="Futebol">
+                    <label for="Futebol">Futebol</label><br>
+                </div>
+            </div>
+            </fieldset>
+
+        <form align="center">
+            <input type="submit" value="Enviar Formulário">
+            <input type="reset" value="Limpar Formulário">
+        </form>
     </body>
 </html>
