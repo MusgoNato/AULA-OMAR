@@ -1,0 +1,69 @@
+/*Definição da lista globalizada*/
+ul{
+    margin-top: 0px;
+    padding: 0;
+    list-style: none;
+    width: 100px;
+    
+}
+
+/*Aqui e definido a posição absoluta aos menus, pois quando colocar submenus,
+estes tem que estar ao lado dos menus principais*/
+ul li{
+    background: rgb(224, 27, 106);
+    position: relative;
+
+}
+
+/*Para definir o display do submenu ao lado do pai dele, tem que colocar as propriedades left e top
+assim consigo posicionar cada submenu em relação com o seu pai, o menu, bem ao lado dele*/
+li ul{
+    position: absolute;
+    left: 50px;
+    top: 0;   
+    background: rgb(204,204,204);
+}
+
+ul li a{
+    /*É para que cada link ocupe a largura definida por ele na lista*/
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+/*Faz com que apareça meu submenu*/
+li:hover ul a{
+    display: block;
+    background: rgb(224, 27, 106);
+}
+
+/*Mudando a cor de cada lista com seu id definido no doc html*/
+#Sobre_nos{
+    background: rgb(204,204,204);
+}
+
+#ideias{
+    background: rgb(204,204,204);
+}
+
+#Serviços{
+    background: rgb(204,204,204);
+}
+
+#Marketing{
+    background: rgb(204,204,204);
+}
+
+/*Definindo tamanho para a tag img, para padronizar as outras imagens que serão inseridas tambem*/
+img{
+    margin: 5px;
+    width: 20px;
+}
+
+/*Defnindo as listas para sua altura e margem nao ultrapassar o tamanho ideal*/
+li{
+    height: 40px;
+    margin-top: 0px;
+}
