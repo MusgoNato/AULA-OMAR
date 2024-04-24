@@ -1,8 +1,66 @@
-/*Arquivo referente ao 2° exericio*/
-li{
-    display: block;
-    margin: 10px;
-}
-ul{
+/* Estilos para o menu */
+/*Aqui é alinhado horizontalmente os menus que irão conter as opções de escolha*/
+#menu ul {
+    list-style-type: none;
+    width: max-content;
+    margin: 0;
+    padding: 0;
     display: flex;
+    
+    background-color: green;
+}
+
+/*Este vai ser o submenu correspondente, que vai ser as opções do menu principal na horizontal*/
+#menu ul li {
+    position: relative;
+    margin-right: 20px;
+    
+}
+
+/*Todos os elementos ul dentro de outro ul, que esta dentro da tag nav, terao esse tipo de comportamento*/
+#menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 0;
+    
+}
+
+/*Todos os filhos diretos de li terão a sua visualização aparente quando o mouse passar por cima dele*/
+#menu ul li:hover > ul {
+    display: block;
+   
+}
+
+/*Todos as listas dentro dos ul, que estarao dentro da tag nav, especificada com o id menu,
+terao como visualização em bloco, ou seja ocupará a linha toda */
+#menu ul ul li {
+    display: block;
+    padding: 10px;
+    border-style: solid;
+   
+}
+
+/*É de certa forma adiocinado o ultimo elemento do submenu*/
+#menu ul ul li:last-child {
+    border-style: solid;
+}
+
+/*Quando passar sobre os submenus o mouse, terá a cor especificada*/
+#menu ul ul li:hover {
+    background-color: whitesmoke;
+}
+
+/*Posiciona todos os submenus um abaixo do outro, pelo seu pai*/
+#menu ul ul ul {
+    left: 100%;
+    top: 0;
+}
+
+/*Retira o sublinhado de todos os links no documento*/
+#menu a{
+    color: white;
+    text-decoration: none;
 }
