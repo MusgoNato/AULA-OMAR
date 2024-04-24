@@ -1,0 +1,8 @@
+/*Arquivo referente ao 2° exericio*/
+li{
+    display: block;
+    margin: 10px;
+}
+ul{
+    display: flex;
+}
