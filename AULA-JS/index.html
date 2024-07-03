@@ -2,7 +2,34 @@
 <html>
     <head>
         <body>
+            <!--
             <link rel="javascript" href="variaveis_operadores.js">
+            -->
+            <script>
+                var nota_1 = 5;
+                var nota_2 = 5;
+
+                /*Caso nao coloque entre parenteses o valor saira errado*/
+                var media = (nota_1 + nota_2)/2;
+                var retorno = '';
+                
+                /*Verificação para impressao do numero*/
+                if(media >= 6.0)
+                {
+                    retorno = 'APROVADO';
+                }
+                else
+                {
+                    retorno = 'REPROVADO';
+                }
+                
+                /*Exibição dos valores na tela*/
+                alert("Nota 1 : " + nota_1 + "\nNota 2 : " + nota_2 + "\nMedia : " + media + "\nSituação : " + retorno);
+                
+                /*O console.log representa o console do dev tools do navegador*/
+                console.log("Media : " + media);
+                
+            </script>
         </body>
     </head>
 </html>
