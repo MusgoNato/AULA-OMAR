@@ -1,0 +1,4 @@
+== Verifica se o valor é igual a == b
+=== Verifica se o valor é igual e se é do mesmo tipo a === b
+!= Verifica se o valor é diferente a != b
+!== Verifica se o valor é diferente e não é do mesmo tipo a !== b
